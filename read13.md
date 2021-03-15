@@ -23,5 +23,15 @@ the storage event will not fire, because nothing actually changed in the storage
 within the browser itself. Here is a live demonstration. Make a few moves, then close the browser tab, then re-open it. If your browser supports HTML5 Storage,
 the demonstration page should magically remember your exact position within the game, including the number of moves you’ve made, the position of each of the pieces on the board,
 and even whether a particular piece is selected.
-
+# BEYOND NAMED KEY-VALUE PAIRS: COMPETING VISIONS
+While the past is littered with hacks and workarounds, the present condition of HTML5 Storage is surprisingly rosy. A new API has been standardized and implemented across all major browsers, platforms, and devices. As a web developer, that’s just not something you see every day, is it? But there is more to life than “5 megabytes of named key/value pairs,” and the future of persistent local storage is… how shall I put it… well, there are competing visions.
+One vision is an acronym that you probably know already: SQL. In 2007, Google launched Gears, an open source cross-browser plugin which included an embedded database based on SQLite. This early prototype later influenced the creation of the Web SQL Database specification. Web SQL Database (formerly known as “WebDB”) provides a thin wrapper around a SQL database, allowing you to do things like this from JavaScript:
+WEB SQL DATABASE SUPPORT
+IE : .
+FIREFOX : .
+SAFARI : 4.0+
+CHROME : 4.0+
+OPERA : 10.5+
+IPHONE : 3.0+
+ANDROID : 2.0+
 
